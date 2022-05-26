@@ -2,7 +2,6 @@ package com.example.commercecart.controller;
 
 import com.example.commercecart.model.Product;
 import com.example.commercecart.service.CartService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,7 +15,6 @@ import java.util.List;
 public class CartController {
 
     final CartService cartService;
-
     public CartController(CartService cartService) {
         this.cartService = cartService;
     }
